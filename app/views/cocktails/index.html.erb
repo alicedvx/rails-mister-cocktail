@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <div class="text-center mb-5 mt-5">
+    <h1>Welcome to Mister Cocktail 🍸</h1>
+  </div>
+
+  <div class="flex">
+    <div class="card" style="width: 18rem; padding: 3px">
+      <% @cocktails.each do |cocktail| %>
+      <h2><%= cocktail.name %></h2>
+      <p><%= link_to "drink details", cocktail_path(cocktail) %></p>
+      <% end %>
+    </div>
+  </div>
+
+
+  <div>
+    <%= link_to "create drink", new_cocktail_path(@cocktail), class: "btn btn-primary mt-3 mb-5" %>
+  </div>
+
+</div>
+

@@ -1,0 +1,8 @@
+<div class="container mt-5">
+  <h1>We can't wait to hear about your signature-cocktail</h1>
+
+  <%= form_for(@cocktail) do |f| %>
+    <%= f.text_field :name %>
+    <%= f.button :button, type: :submit, class: "btn-primary" %>
+  <% end %>
+</div>
